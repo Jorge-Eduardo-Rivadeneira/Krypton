@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="322.0" prefWidth="543.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="krypton_package.Controller">
+   <children>
+      <AnchorPane prefHeight="51.0" prefWidth="542.0" style="-fx-background-color: #095075 #095075;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <HBox layoutY="48.0" prefHeight="3.0" prefWidth="332.0" />
+            <ImageView fitHeight="27.0" fitWidth="26.0" layoutX="503.0" layoutY="13.0" onMouseClicked="#ExitButtonClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/exit.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fitHeight="56.0" fitWidth="196.0" layoutX="14.0" layoutY="-5.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@images/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="290.0" prefHeight="32.0" prefWidth="543.0" style="-fx-background-color: #095075 #095075;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="290.0">
+         <children>
+            <HBox layoutY="-9.0" prefHeight="56.0" prefWidth="285.0">
+               <children>
+                  <Separator prefHeight="1.0" prefWidth="293.0" visible="false" />
+               </children>
+            </HBox>
+            <ImageView fitHeight="27.0" fitWidth="26.0" layoutX="507.0" layoutY="1.0" onMouseClicked="#SearchFolderClick" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/copyleft.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <Label layoutX="430.0" layoutY="10.0" text="CopyLeft - 2020" textFill="WHITE">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Separator layoutX="26.0" layoutY="170.0" prefHeight="3.0" prefWidth="486.0" />
+      <Label layoutX="8.0" layoutY="192.0" text="Operation:" textFill="#095075">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPath" layoutX="102.0" layoutY="77.0" prefHeight="17.0" prefWidth="400.0" textAlignment="JUSTIFY" />
+      <ImageView fitHeight="27.0" fitWidth="26.0" layoutX="499.0" layoutY="71.0" onMouseClicked="#SearchFolderClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/folder.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="btnStart" layoutX="218.0" layoutY="241.0" mnemonicParsing="false" onMouseClicked="#StartButtonClick" prefHeight="32.0" prefWidth="108.0" textFill="#095073">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="8.0" layoutY="75.0" prefHeight="20.0" prefWidth="83.0" text="Folder Path:" textFill="#095075">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <PasswordField id="txtPassword" fx:id="txtPassword" layoutX="93.0" layoutY="111.0" prefHeight="27.0" prefWidth="418.0" promptText="Type the password" />
+      <RadioButton fx:id="encryptRDB" layoutX="154.0" layoutY="191.0" mnemonicParsing="false" onMouseClicked="#SelectEncrypt" selected="true" text="Encrypt" textFill="#095075">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="decryptRDB" layoutX="326.0" layoutY="191.0" mnemonicParsing="false" onMouseClicked="#SelectDecrypt" text="Decrypt" textFill="#095075">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="8.0" layoutY="115.0" prefHeight="20.0" prefWidth="83.0" text="Password:" textFill="#095075">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
