@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="322.0" prefWidth="543.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="krypton_package.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="322.0" prefWidth="543.0" xmlns:fx="http://javafx.com/fxml" fx:controller="krypton_package.Controller">
    <children>
       <AnchorPane prefHeight="51.0" prefWidth="542.0" style="-fx-background-color: #095075 #095075;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>

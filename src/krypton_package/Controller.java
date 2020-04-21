@@ -54,14 +54,14 @@ public class Controller implements Initializable {
         alert.setTitle("k[r]!PTØn - Open Source Cryptographic Tool");
         alert.setHeaderText(null);
 
-        if (lblPath.getText().isBlank() && txtPassword.getText().isBlank()){
+        if (lblPath.getText().equals("") && txtPassword.getText().equals("")){
             alert.setContentText("Must select a folder, and define a password");
             alert.showAndWait();
 
-        }else if (lblPath.getText().isBlank()){
+        }else if (lblPath.getText().equals("")){
             alert.setContentText("Must select a folder");
             alert.showAndWait();
-        }else if (txtPassword.getText().isBlank()) {
+        }else if (txtPassword.getText().equals("")) {
             alert.setContentText("Must define a password");
             alert.showAndWait();
         }else{
